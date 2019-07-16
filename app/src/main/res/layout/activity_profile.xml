@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_smoke">
+
+
+    <RelativeLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+        <ImageView
+                android:id="@+id/coverPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_bismark" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_black_hex_10" />
+
+        <RelativeLayout
+                android:id="@+id/profilePicHolder"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/round_image_bg"
+                    android:padding="4dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePic"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_bismark" />
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilePicHolder"
+                android:layout_margin="10dp"
+                android:text="Nyame Bismark"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/topView"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/basicInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Personal Information"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:text="Track: ALC 4.0 Android"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="Country: Ghana"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="Email: nyamebismark12.nb@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="Phone Number: 233547823850"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="Slack Username: Nyame Bismark"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+
+
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

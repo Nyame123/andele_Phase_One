@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity">
+
+    <View android:layout_width="0dp"
+          android:layout_height="200dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:background="@color/colorPrimary"
+          android:id="@+id/title_holder_background"
+          app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/title_txt"
+              android:text="Welcome to ALC 4.0"
+              android:fontFamily="@font/open_sans_bold"
+              android:textSize="30sp"
+              android:textStyle="bold"
+              android:gravity="center"
+              app:layout_constraintStart_toStartOf="@+id/title_holder_background"
+              app:layout_constraintTop_toTopOf="@+id/title_holder_background"
+              app:layout_constraintBottom_toBottomOf="@+id/title_holder_background"
+              app:layout_constraintEnd_toEndOf="@+id/title_holder_background"
+              android:textColor="@color/white"/>
+
+
+    <Button android:layout_width="0dp" android:layout_height="40dp"
+            android:id="@+id/about_alc_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_holder_background"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_button_bg"
+            android:textColor="@color/black"
+            android:text="ABOUT ALC"
+            android:textAllCaps="true"
+            android:fontFamily="@font/open_sans_semibold"
+            android:foreground="?attr/selectableItemBackground"/>
+
+    <Button android:layout_width="0dp" android:layout_height="40dp"
+            android:id="@+id/my_profile_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_alc_btn"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_button_bg"
+            android:textColor="@color/black"
+            android:text="MY PROFILE"
+            android:textAllCaps="true"
+            android:fontFamily="@font/open_sans_semibold"
+            android:foreground="?attr/selectableItemBackground"/>
+</android.support.constraint.ConstraintLayout>
